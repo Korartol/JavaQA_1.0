@@ -42,7 +42,9 @@ public class Radio {
     // Блок громкости
 
     private int currentVolume;
+
     public int getCurrentVolume() {
+
         return currentVolume;
     }
 

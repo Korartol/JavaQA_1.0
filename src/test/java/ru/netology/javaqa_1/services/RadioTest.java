@@ -64,6 +64,24 @@ public class RadioTest {
     }
 
 
+    @ParameterizedTest
+    @CsvSource({
+            "10,10",
+            "11,5",
+            "9,9",
+            "1,1",
+            "0,0",
+            "-1,5"
+    })
+    public void shouldSetVolume(int set, int expected) {
+        Radio rad = new Radio();
+        rad.setCurrentVolume(5);  // предположим что в памяти сейчас 5 громкость
+        rad.setCurrentVolume(set);
+
+        int actual = rad.getCurrentVolume();
+        Assertions.assertEquals(expected, actual);
+    }
+
     // тест громкости на увеличение
 
     @ParameterizedTest
@@ -100,7 +118,6 @@ public class RadioTest {
         int actual = rad.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
-
 
 
 //    @Test
