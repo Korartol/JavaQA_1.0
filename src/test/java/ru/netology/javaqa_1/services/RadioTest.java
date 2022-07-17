@@ -7,8 +7,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 
 public class RadioTest {
-    Radio rad = new Radio();  // объявляем для всех при значении кол-ва станций по умолчанию равное 10
-
+    Radio rad = new Radio();
 
     // тест переменных по умолчанию
     @Test
@@ -21,8 +20,22 @@ public class RadioTest {
         Assertions.assertEquals(100, rad.getMaxVolume());
         Assertions.assertEquals(0, rad.getCurrentVolume());
     }
-
-
+//    Radio rad = new Radio();  // объявляем для всех при значении кол-ва станций по умолчанию равное 10
+//
+//
+//    // тест переменных по умолчанию
+//    @Test
+//    public void variablesTest() {
+//        Assertions.assertEquals(10, rad.getQuantityStation());
+//        Assertions.assertEquals(0, rad.getMinStation());
+//        Assertions.assertEquals(9, rad.getMaxStation());
+//        Assertions.assertEquals(0, rad.getCurrentStation());
+//        Assertions.assertEquals(0, rad.getMinVolume());
+//        Assertions.assertEquals(100, rad.getMaxVolume());
+//        Assertions.assertEquals(0, rad.getCurrentVolume());
+//    }
+//
+//
 // ТЕСТ РАДИОСТАНЦИЙ
 
     @ParameterizedTest
@@ -143,7 +156,7 @@ public class RadioTest {
     // тест переменной количества станций (меняем на 100)
     @Test
     public void variablesTestNewStation() {
-        Radio rad = new Radio(100);
+        Radio rad = new Radio(100, 0, 99, 0, 0, 100, 0);
 
         Assertions.assertEquals(100, rad.getQuantityStation());
         Assertions.assertEquals(0, rad.getMinStation());
@@ -167,7 +180,7 @@ public class RadioTest {
             "-1,5"
     })
     public void shouldSetStationNewStation(int set, int expected) {
-        Radio rad = new Radio(100);
+        Radio rad = new Radio(100, 0, 99, 0, 0, 100, 0);
         rad.setCurrentStation(5);  // предположим что в памяти сейчас 5 станция
         rad.setCurrentStation(set);
 
@@ -186,7 +199,7 @@ public class RadioTest {
             "98,99"
     })
     public void shouldNextStationNewStation(int set, int expected) {
-        Radio rad = new Radio(100);
+        Radio rad = new Radio(100, 0, 99, 0, 0, 100, 0);
         rad.setCurrentStation(set);
         rad.nextStation();
 
@@ -204,7 +217,7 @@ public class RadioTest {
             "5,4"
     })
     public void shouldPrevStationNewStation(int set, int expected) {
-        Radio rad = new Radio(100);
+        Radio rad = new Radio(100, 0, 99, 0, 0, 100, 0);
         rad.setCurrentStation(set);
         rad.prevStation();
 
