@@ -3,7 +3,7 @@ package ru.netology.javaqa_1.services;
 public class Radio {
 
     // Блок станции
-    private int quantityStation = 10;  // количество радиостанций по умолчанию
+    private int quantityStation = 10;  // количество радиостанций по умолчанию!!!!!!!!
     private int minStation = 0;  // минимально возможная станция
     private int maxStation = quantityStation - 1;
     private int currentStation;
