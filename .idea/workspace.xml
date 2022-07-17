@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65daf89f-dc05-4d28-b158-89c0b1aa0eec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/javaqa_1/services/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/javaqa_1/services/Radio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/javaqa_1/services/RadioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/javaqa_1/services/RadioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +53,7 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RadioTest.shouldSetVolume">
+  <component name="RunManager" selected="JUnit.RadioTest">
     <configuration name="RadioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaQA_1.0" />
       <extension name="coverage">
@@ -67,38 +69,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldNextVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaQA_1.0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.javaqa_1.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.javaqa_1.services" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqa_1.services.RadioTest" />
-      <option name="METHOD_NAME" value="shouldNextVolume(int,int)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RadioTest.shouldPrevStation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaQA_1.0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.javaqa_1.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.javaqa_1.services" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqa_1.services.RadioTest" />
-      <option name="METHOD_NAME" value="shouldPrevStation(int,int)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RadioTest.shouldPrevVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaQA_1.0" />
       <extension name="coverage">
@@ -110,6 +80,22 @@
       <option name="PACKAGE_NAME" value="ru.netology.javaqa_1.services" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.javaqa_1.services.RadioTest" />
       <option name="METHOD_NAME" value="shouldPrevVolume(int,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RadioTest.shouldSetStation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaQA_1.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.javaqa_1.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.javaqa_1.services" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqa_1.services.RadioTest" />
+      <option name="METHOD_NAME" value="shouldSetStation(int,int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,13 +117,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RadioTest.variablesTestNewStation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaQA_1.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.javaqa_1.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.javaqa_1.services" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqa_1.services.RadioTest" />
+      <option name="METHOD_NAME" value="variablesTestNewStation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RadioTest.shouldSetVolume" />
         <item itemvalue="JUnit.RadioTest" />
+        <item itemvalue="JUnit.RadioTest.variablesTestNewStation" />
+        <item itemvalue="JUnit.RadioTest.shouldSetStation" />
+        <item itemvalue="JUnit.RadioTest.shouldSetVolume" />
         <item itemvalue="JUnit.RadioTest.shouldPrevVolume" />
-        <item itemvalue="JUnit.RadioTest.shouldNextVolume" />
-        <item itemvalue="JUnit.RadioTest.shouldPrevStation" />
       </list>
     </recent_temporary>
   </component>
